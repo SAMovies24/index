@@ -1,102 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<style>
-.tabs .tab a:focus,.tabs .tab a:focus.active{background:none}.col img{aspect-ratio: 2 / 3;width:100%;border-radius:5px;margin-bottom:5px}.padDrew{padding:10px 0;margin:50px 0}.sidenav li{transition:background ease .2s}.row .col{padding:0 5px}.each-category{padding:0 5px}.sidenav li>a{margin:0 10px;background:#212121;color:rgb(222,215,215);border-radius:3px;display:flex;align-items:center;gap:10px;padding:0 10px}#nav-mobile a.active-sidenav,.sidenav li>a.active-sidenav{background:rgba(60,128,85,.2);color:#20bf6b}#nav-mobile a{font-weight:600}.buscador{float:right;margin:0 18px;z-index:1}@media screen and (min-width:991px){nav .brand-logo{margin:0 10px}}@media only screen and (max-width:992px){nav .brand-logo{left:110px}}.tab a,.sidenav li a{font-weight:600}img.circle{border-radius:100%;overflow:hidden}.banner{display:flex;gap:10px;padding:10px;background:rgb(20,20,20)}.sidenav li{line-height:0}*{list-style-type:none}
-</style>
-<title>Home - SAMovied</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="grey darken-4">
-<div class="navbar-fixed">
-<nav class="nav-extended black">
-<div class="nav-wrapper">
-<a href="#" class="brand-logo">Anime</a>
-<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-<ul id="nav-mobile" class="right hide-on-med-and-down">
-<!--<li><a href="go:Home" >Películas</a></li>-->
-<li><a href="#!" class="active-sidenav">Anime</a></li>
-</ul>
-<a href="buscador.html" class="left-align buscador"><i class="material-icons">search</i></a>
-</div>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/netflix-logo.png" alt="Netflix Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <!-- Otros enlaces de navegación -->
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="nav-content">
-<ul class="tabs tabs-transparent">
-<li class="tab"><a href="#TAG1" class="active">ANIME</a></li>
-<li class="tab"><a href="#TAG2" class="active">PELICULAS</a></li>
-</ul>
-</div>
-</nav>
-</div>
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenido a Netflix</h1>
+            <p>Disfruta de una amplia selección de películas, series y mucho más.</p>
+        </div>
+    </section>
 
-<ul class="sidenav grey darken-4" id="mobile-demo">
-<li class="row banner">
-<div class="s4">
-<img src="https://i.ibb.co/XSfrqty/SAMOVIES-2.png" alt="" class="responsive-img">
-</div>
+    <!-- Sección de categorías, contenido destacado, etc. -->
 
-
-</li>
-<!--<li><a class="" href="go:Home"><span class="material-icons">movie </span> Películas</a></li>-->
-<li><a class="active-sidenav" href="#!"><span class="material-icons"> live_tv </span> Anime</a></li>
-</ul>
-
-<div class="each-category">
-
-<!--INICIO DE SECCION LATINO-->
-<div id="TAG1" class="row padDrew">
-
-<li><a href="Kono Subarashii Sekai ni Bakuen wo!" class="col s4 m3 l2">
-<img src="https://media.themoviedb.org/t/p/original/68rh8l8RaGujTDF6k87yykxixIy.jpg" alt="poster">
-</a></li>
-
-<li><a href="Kono Subarashii Sekai ni Bakuen wo!" class="col s4 m3 l2">
-<img src="https://media.themoviedb.org/t/p/original/68rh8l8RaGujTDF6k87yykxixIy.jpg" alt="poster">
-</a></li>
-
-
-</div><!--FIN DE SECCION TAG1-->
-
-
-
-
-<!--INICIO DE SECCION PELÍCULAS-->
-<div id="TAG2" class="row padDrew">
-
-<li><a href="60 Minutos" class="col s4 m3 l2">
-<img src="https://media.themoviedb.org/t/p/original/cND79ZWPFINDtkA8uwmQo1gnPPE.jpg" alt="poster">
-</a></li>
-
-
-
-</div><!--FIN DE SECCION TAG1-->
-</div>
-
-
-
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-M.AutoInit();
-</script>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Netflix Clone</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  var disclaimer =  document.querySelector("img[alt='www.000webhost.com']");
-   if(disclaimer){
-       disclaimer.remove();
-   }  
- });
- </script>
