@@ -1,39 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MuBen</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <img src="img/netflix-logo.png" alt="Netflix Logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Películas</a></li>
-                    <!-- Otros enlaces de navegación -->
-                </ul>
-            </nav>
+        <nav>
+            <div class="logo">
+                <img width="100" src="imagenes/pngegg.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Titulos, generos, año....">
+                <button type="submit">Buscar</button>
+            </div>
+            <div class="user-options">
+                <button id="login-signup">Iniciar Sesión / Registrarse</button>
+            </div>
+        </nav>
+        <div class="video-container">
+            <video id="header-video" autoplay muted loop>
+                <source src="videos/Avatar-1440-resolution.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="controls">
+                <button class="boton-sonido" id="toggle-sound">🔊</button>
+                <button class="boton" id="watch-now">▶ Ver Ahora</button>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Bienvenido a Netflix</h1>
-            <p>Disfruta de una amplia selección de películas, series y mucho más.</p>
-        </div>
-    </section>
 
-    <!-- Sección de categorías, contenido destacado, etc. -->
+    <main>
+        <section class="movies container">
+            <h2>Peliculas mas vistas</h2>
+            <hr>
+            <div class="box-container-1">
+                <div class="box-1">
+                    <div class="content">
+                        <img src="https://media.themoviedb.org/t/p/original/cW0fOIZONkgeiMJDYzqUcgl4MUn.jpg" alt="iron-man">
+                        <h3>Iron Man 3 (2013)</h3>
+                        <P>El descarado y brillante empresario Tony Stark/Iron Man se enfrentará a un enemigo cuyo poder
+                            no conoce límites. Cuando Stark comprende que su enemigo ha destruido su universo personal,
+                            se embarca en una angustiosa búsqueda para encontrar a los responsables. Este viaje pondrá a
+                            prueba su entereza una y otra vez. Acorralado, Stark tendrá que sobrevivir por sus propios
+                            medios, confiando en su ingenio y su instinto para proteger a las personas que quiere.</P>
+                    </div>
+                </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Netflix Clone</p>
-        </div>
-    </footer>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/2.jpg" alt="Thor">
+                        <h3>Thor: Love and Thunder (2022)</h3>
+                        <P>El Dios del Trueno emprende un viaje que no se parece en nada a lo que se ha enfrentado hasta
+                            ahora: una búsqueda de la paz interior. Pero el retiro de Thor se ve interrumpido por un
+                            asesino galáctico conocido como Gorr el Carnicero de Dioses. Para hacer frente a la amenaza,
+                            Thor solicita la ayuda de Valkiria, de Korg y de su ex novia Jane Foster que, para sorpresa
+                            de Thor, empuña su martillo mágico, Mjolnir, como la Poderosa Thor. Juntos, se embarcan en
+                            una aventura cósmica en la que tendrán que descubrir el misterio de la venganza del
+                            Carnicero de Dioses y detenerlo antes de que sea demasiado tarde.</P>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/3.jpg" alt="Thor-2">
+                        <h3>Thor: Ragnarok (2017)
+                        </h3>
+                        <P>Thor está preso al otro lado del universo sin su poderoso martillo y se enfrenta a una
+                            carrera contra el tiempo. Su objetivo es volver a Asgard y parar el Ragnarok porque
+                            significaría la destrucción de su planeta natal y el fin de la civilización Asgardiana a
+                            manos de una todopoderosa y nueva amenaza, la implacable Hela. Pero, primero deberá
+                            sobrevivir a una competición letal de gladiadores que lo enfrentará a su aliado y compañero
+                            en los Vengadores, ¡el Increíble Hulk!</P>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/4.jpg" alt="Resident-Evil">
+                        <h3>Resident Evil: Bienvenidos a Raccoon City (2021)
+                        </h3>
+                        <P>Nueva adaptación al cine de los videojuegos de Capcom. La que fue una pujante ciudad sede del
+                            gigante farmacéutico Umbrella Corporation, Raccoon City, es ahora un pueblo agonizante del
+                            Medio Oeste. El éxodo de la compañía dejó a la ciudad convertida en un erial… con un gran
+                            mal gestándose bajo la superficie. Cuando ese mal se desata, un grupo de supervivientes
+                            deben unirse para destapar la verdad detrás de Umbrella y sobrevivir a la noche</P>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/qzYP4eiDmBoVztMUmWtKqMZcUGN.webp" alt="La-vieja-guardia">
+                        <h3>La vieja guardia (2020)
+                        </h3>
+                        <P>Cuatro guerreros inmortales que llevan siglos protegiendo a la humanidad en secreto son
+                            perseguidos a causa de sus misteriosos dones tras descubrir a una nueva inmortal.</P>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/fYtIWhTDgPTcutD24f53Dcc7BAE.webp" alt="Spectral">
+                        <h3>Spectral (2016)
+                        </h3>
+                        <P>Esta historia de ciencia ficción / thriller se centra en un equipo de operaciones especiales
+                            enviado para luchar contra unos seres sobrenaturales.</P>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/7.jpg" alt="300">
+                        <h3>300: El origen de un imperio (2014)
+                        </h3>
+                        <P>La historia se ambienta en el año 490 a.C., unos diez años antes de la batalla de las
+                            Termópilas. El general griego Temistocles intenta unir las polis griegas para combatir a los
+                            persas invasores. Él dirigirá las tropas griegas que se enfrentarán con los persas en la
+                            decisiva batalla de Maratón. La derrota persa impedirá la invasión del país.</P>
+                    </div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
+                        <img src="imagenes/8.jpg" alt="Proyecto-power">
+                        <h3>Proyecto Power (2020)
+                        </h3>
+                        <P>Comienza a correrse la voz por las calles de Nueva Orleans de una misteriosa pastilla nueva
+                            que le confiere superpoderes únicos a cada persona que la consume. ¿La trampa? No sabes qué
+                            puede pasar hasta que la tomas... Algunos adquieren una piel a prueba de balas,
+                            invisibilidad y fuerza sobrehumana, mientras que otros padecen una reacción más letal.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movies container">
+            <h2>Peliculas de Accion</h2>
+            <hr>
+            <div class="box-container-2">
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/9.jpg" alt="Venom-2">
+                        <h3>Venom: habrá matanza (2021)
+                        </h3>
+                        <P>Eddie Brock y su simbionte Venom todavía están intentando descubrir cómo vivir juntos cuando
+                            un preso que está en el corredor de la muerte se infecta con un simbionte propio.</P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/10.jpg" alt="Venom-1">
+                        <h3>Venom (2018)
+                        </h3>
+                        <P>Eddie Brock es un consolidado periodista y astuto reportero que está investigando una empresa
+                            llamada Fundación Vida. Esta fundación, dirigida por el eminente científico Carlton Drake,
+                            está ejecutando secretamente experimentos ilegales en seres humanos y realizando pruebas que
+                            involucran formas de vida extraterrestres y amorfas conocidas como simbiontes.</P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/11.jpg" alt="Spider-Man">
+                        <h3>Spider-Man: No Way Home (2021)
+                        </h3>
+                        <P>Peter Parker es desenmascarado y por tanto no es capaz de separar su vida normal de los
+                            enormes
+                            riesgos que conlleva ser un súper héroe. Cuando pide ayuda a Doctor Strange, los riesgos
+                            pasan a
+                            ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man.
+                        </P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/12.jpg" alt="Avengers-1">
+                        <h3>Vengadores: Infinity War (2018)
+                        </h3>
+                        <P>El todopoderoso Thanos ha despertado con la promesa de arrasar con todo a su paso, portando
+                            el
+                            Guantelete del Infinito, que le confiere un poder incalculable. Los únicos capaces de
+                            pararle
+                            los pies son los Vengadores y el resto de superhéroes de la galaxia, que deberán estar
+                            dispuestos a sacrificarlo todo por un bien mayor. Capitán América e Ironman deberán limar
+                            sus diferencias.</P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/13.jpg" alt="Avengers-2">
+                        <h3>Vengadores: Endgame (2019)
+                        </h3>
+                        <P>Después de los eventos devastadores de 'Vengadores: Infinity War', el universo está en ruinas
+                            debido a las acciones de Thanos. Con la ayuda de los aliados que quedaron, los Vengadores
+                            deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el
+                            universo de una vez por todas, sin importar cuáles sean las consecuencias... Cuarta y última
+                            entrega de la saga "Vengadores".</P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/14.jpg" alt="Mad-Max">
+                        <h3>Mad Max: Furia en la carretera (2015)
+                        </h3>
+                        <P>Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo
+                            por
+                            el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del
+                            desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una
+                            Ciudadela
+                            tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el
+                            Señor de
+                            la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una
+                            'guerra
+                            de la carretera' de altas revoluciones.</P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/gh2bmprLtUQ8oXCSluzfqaicyrm.webp" alt="John-Wick">
+                        <h3>John Wick 4 (2023)
+                        </h3>
+                        <P>John Wick descubre un camino para derrotar a la Alta Mesa. Pero para poder ganar su libertad,
+                            Wick deberá enfrentarse a un nuevo rival con poderosas alianzas en todo el mundo, capaz de
+                            convertir a viejos amigos en enemigos.</P>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="content">
+                        <img src="imagenes/x3zlm6VxPvVrYWE3bHkYUQMR798.webp" alt="Rapidos-y-furiosos-x">
+                        <h3>Fast & Furious X (2023)
+                        </h3>
+                        <P>Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de
+                            ser
+                            más listos, de tener más valor y de ir más rápido que cualquier enemigo que se cruzara con
+                            ellos. Pero ahora tendrán que enfrentarse al oponente más letal que jamás hayan conocido: Un
+                            terrible peligro que resurge del pasado, que se mueve por una sangrienta sed de venganza y
+                            que
+                            está dispuesto a destrozar a la familia y destruir para siempre todo lo que a Dom le
+                            importa.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="movies container">
+            <h2>Peliculas HD</h2>
+            <hr>
+            <div class="box-container-3">
+                <div class="box-3">
+                    <div class="content">
+                        <img src="imagenes/17.jpg" alt="Life">
+                        <h3>Life (Vida) (2017)
+                        </h3>
+                        <P>Seis miembros de la tripulación de la Estación Espacial Internacional que están a punto de
+                            lograr
+                            uno de los descubrimientos más importantes en la historia humana: la primera evidencia de
+                            vida
+                            extraterrestre en Marte. A medida que el equipo comienza a investigar y sus métodos tienen
+                            consecuencias inesperadas, la forma viviente demostrará ser más inteligente de lo que
+                            cualquiera
+                            esperaba.</P>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <div class="content">
+                        <img src="imagenes/18.jpg" alt="Morbius">
+                        <h3>Morbius (2022)
+                        </h3>
+                        <P>Peligrosamente enfermo de un extraño trastorno sanguíneo, y determinado a salvar a otras
+                            personas
+                            que padecen su mismo destino, el doctor Morbius intenta una apuesta desesperada. Lo que en
+                            un
+                            principio parece ser un éxito radical, pronto se revela como un remedio potencialmente peor
+                            que
+                            la enfermedad.</P>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <div class="content">
+                        <img src="imagenes/2ac7U6PTQj9pfCLDLXNzn45uAkC.webp" alt="Vikingos">
+                        <h3>BATALLA DE LOS HEREDEROS "VIKINGOS" (2023)
+                        </h3>
+                        <P>Un joven vikingo debe aceptar la idea de que puede ser el hijo del rey, que fue cambiado al
+                            nacer, pero no antes de que otros intenten ocupar el lugar que le corresponde.</P>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <div class="content">
+                        <img src="imagenes/20.jpg" alt="Batman">
+                        <h3>Batman (2022)
+                        </h3>
+                        <P>Cuando un asesino se dirige a la élite de Gotham con una serie de maquinaciones sádicas, un
+                            rastro de pistas crípticas envía Batman a una investigación en los bajos fondos. A medida
+                            que
+                            las pruebas comienzan a acercarse a su casa y se hace evidente la magnitud de los planes del
+                            autor, Batman debe forjar nuevas relaciones, desenmascarar al culpable y hacer justicia al
+                            abuso
+                            de poder y la corrupción que durante mucho tiempo han asolado Gotham City.</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more" id="load-more-1">Cargar mas</div>
+        </section>
+
+    </main>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
